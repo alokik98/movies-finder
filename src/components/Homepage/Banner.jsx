@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Banner.css";
 import { Link } from 'react-router-dom';
-import homepageImage from "../images/homepage-background.jpg";
+import homepageImage from "../../images/homepage-background.jpg";
 
 
 const Banner = () => {
@@ -16,7 +16,7 @@ const Banner = () => {
                 <h1 className="banner__title">Unlimited movies, TV shows and more.</h1>
                 <p className="banner__description">Get Information anywhere.</p>
                 <div className="banner__buttons">
-                    <Link to="/login">
+                    <Link to="/signup">
                         <button className="banner__button">Get Started</button>
                     </Link>
                 </div>
@@ -25,4 +25,4 @@ const Banner = () => {
     )
 }
 
-export default Banner
+export default Banner;

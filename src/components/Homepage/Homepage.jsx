@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from './Banner';
 import "./Homepage.css";
-import Nav from "./Nav"
+import Nav from "./../Nav/Nav"
 
 const Homepage = () => {
     return (
