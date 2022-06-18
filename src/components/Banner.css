@@ -1,0 +1,42 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    object-fit: contain;
+    background-color: rgba(23, 24, 25, 0.9);
+    background-blend-mode: soft-light;
+}
+
+.banner__contents {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner__title {
+    margin-bottom: 20px;
+    font-family: Poppins, sans-serif;
+    font-size: 2.5rem;
+}
+
+.banner__description {
+    font-family: Poppins, sans-serif;
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+.banner__button {
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    width: 130px;
+    height: 42px;
+    background-color: #88304e;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
