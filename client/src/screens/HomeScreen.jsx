@@ -88,6 +88,7 @@ const HomeScreen = () => {
     ]);
     const [searchValue, setSearchValue] = useState("");
     const [favourite, setFavourite] = useState([]);
+    const [mylist, setMyList] = useState([]);
 
     const getMovieRequest = async (searchValue) => {
         const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=151a943a`;
@@ -117,24 +118,27 @@ const HomeScreen = () => {
     };
 
     const addFavouriteMovie = (movie) => {
-        const newFavouriteMovie = [...favourite, movie];
-        setFavourite(newFavouriteMovie);
-        saveToLocalStorage(newFavouriteMovie);
+        console.log(movie);
+        favourite.push(movie)
+        setFavourite(favourite);
+        console.log(favourite);
+        setMyList(favourite);
+        saveToLocalStorage(favourite);
     };
 
     const removeFavouriteMovie = (movie) => {
-        const newFavouriteMovie = favourite.filter(
+        var newFavouriteMovie = favourite.filter(
             (favourite) => favourite.imdbID !== movie.imdbID
         );
         setFavourite(newFavouriteMovie);
-        saveToLocalStorage(newFavouriteMovie);
+        // saveToLocalStorage(newFavouriteMovie);
     };
 
     return (
         <div className='homeScreen'>
             <Nav />
             <Banner />
-            <Row title="Movies" searchValue={searchValue} setSearchValue={setSearchValue} movies={movies} handleFavouritesClick={addFavouriteMovie} />
+            <Row title="Movies" searchValue={searchValue} setSearchValue={setSearchValue} movies={movies} handleFavouritesClick={(value) => addFavouriteMovie(value)} />
             <Favourites title="My List" movies={favourite}
                 handleFavouritesClick={removeFavouriteMovie}
             />
