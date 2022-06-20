@@ -13,7 +13,7 @@ const Banner = () => {
         }}>
             <div className="banner__contents">
                 <h1 className="banner__title">
-                    Welcome to Movie Search App
+                    Welcome to Movies Finder
                 </h1>
             </div>
             <div className="banner--fadeBottom" />
