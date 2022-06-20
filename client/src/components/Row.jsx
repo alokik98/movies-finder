@@ -21,7 +21,7 @@ const Row = (props) => {
                         <div className='container'>
                             <img
                                 onClick={() => history("/details", { state: { id: movie.imdbID } })}
-                                className='row__poster' src={movie.Poster} alt={movie.Title} key={movie.imdbID} />
+                                className='row__poster' src={movie.Poster} alt={movie.Title} key={movie.rating} />
                             <div className="popup" onClick={() => props.handleFavouritesClick(movie)}>
                                 <img src={favourite} alt="favourite" style={{
                                     height: "25px",

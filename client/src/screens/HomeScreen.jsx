@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Banner from './../components/Banner'
 import Favourites from './../components/Favourites';
 import Nav from './../components/Nav'
-import RemoveFavourites from './../components/RemoveFavourites';
 import Row from './../components/Row';
 
 const HomeScreen = () => {
@@ -138,7 +137,7 @@ const HomeScreen = () => {
             <Row title="Movies" searchValue={searchValue} setSearchValue={setSearchValue} movies={movies} handleFavouritesClick={addFavouriteMovie} />
             <Favourites title="My List" movies={favourite}
                 handleFavouritesClick={removeFavouriteMovie}
-                favouriteComponent={RemoveFavourites} />
+            />
         </div>
     )
 }
