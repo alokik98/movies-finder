@@ -5,7 +5,11 @@ This is a web app created using ReactJs and Firebase. Here after login, the user
 The user can also add their favourite movie to my list section, which will be retained even after the user is logout.
 
 ## Demo
-Video
+
+
+https://user-images.githubusercontent.com/37907837/174947630-09f268ea-933d-4ae6-aa9d-4a4af8e4a000.mp4
+
+
 
 ## Api and Tech Used
 For this project, I use [themoviedb API](https://www.themoviedb.org). [Redux](https://redux.js.org) to store the global variable and states and [Firebase](https://firebase.google.com) for user authentication.
