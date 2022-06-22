@@ -8,7 +8,7 @@ The user can also add their favourite movie to my list section, which will be re
 Video
 
 ## Api and Tech Used
-For this project, I use (themoviedb API)[https://www.themoviedb.org]. (Redux)[https://redux.js.org] to store the global variable and states and (Firebase)[https://firebase.google.com/] for user authentication.
+For this project, I use [themoviedb API](https://www.themoviedb.org). [Redux](https://redux.js.org) to store the global variable and states and [Firebase](https://firebase.google.com) for user authentication.
 
 ## Login/Sign Up Instructions
 To sign up for the first time user, do the following:
