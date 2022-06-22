@@ -8,6 +8,7 @@ import { auth } from "./firebase";
 import { login, logout, selectUser } from "./features/counter/userSlice";
 import ProfileScreen from "./screens/ProfileScreen";
 import DetailScreen from "./screens/DetailScreen";
+import { GlobalProvider } from "./context/GlobalState";
 
 function App() {
   const user = useSelector(selectUser);
@@ -32,17 +33,19 @@ function App() {
 
   return (
     <div className="app">
-      <Router>
-        {!user ? (
-          <LoginScreen />
-        ) : (
-          <Routes>
-            <Route exact path="/profile" element={<ProfileScreen />} />
-            <Route exact path="/" element={<HomeScreen />} />
-            <Route exact path="/details" element={<DetailScreen />} />
-          </Routes>
-        )}
-      </Router>
+      <GlobalProvider>
+        <Router>
+          {!user ? (
+            <LoginScreen />
+          ) : (
+            <Routes>
+              <Route exact path="/profile" element={<ProfileScreen />} />
+              <Route exact path="/" element={<HomeScreen />} />
+              <Route exact path="/details/:id" element={<DetailScreen />} />
+            </Routes>
+          )}
+        </Router>
+      </GlobalProvider>
     </div>
   );
 }
