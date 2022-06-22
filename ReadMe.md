@@ -1,16 +1,28 @@
 # [Movie Finder App](https://movies-finder-9b6fd.web.app/)
 
-This project was create with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+This is a web app created using ReactJs and Firebase. Here after login, the user can search for any movie, tv series or shows and can view details about that after clicking on the image.
 
-This project is created using [OMDB Api](http://www.omdbapi.com/) and Firebase.
+The user can also add their favourite movie to my list section, which will be retained even after the user is logout.
 
-The project is deployed on Firebase.
+## Demo
+Video
 
-## How to Run using github
+## Api and Tech Used
+For this project, I use (themoviedb API)[https://www.themoviedb.org]. (Redux)[https://redux.js.org] to store the global variable and states and (Firebase)[https://firebase.google.com/] for user authentication.
 
-Go inside client folder and in terminal or in powershell write:
+## Login/Sign Up Instructions
+To sign up for the first time user, do the following:
+1. Enter the email and password in the sign in form.
+2. Click on Sign Up Now.
+3. The user will be created and able to see the homepage.
+4. If email already exists, just click on Sign In.
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Running on Local System
+To run on the local system, nodejs must be installed on the system(pre-requisite). After that follow the steps:
+1. Clone the git repo into your system or download and unzip the zip file.
+2. Go inside the folder and open the terminal/cmd in the exact location.
+3. In terminal write: `npm install` or `yarn install`
+4. After the installation is done, write: `npm start` or `yarn start`.
+5. By doing this, you will be able to access the project in your localhost.
+
